@@ -10,6 +10,7 @@ nav {
     padding: 2px;
     align-items: center;
     justify-content: space-between;
+    height: 60px;
 
 }
 nav ul {
@@ -26,11 +27,15 @@ nav ul li {
 nav a {
     display: block;
     padding: 5px;
-    color: rgb(33, 29, 23);
+    color: #000000;
+    opacity: 50%;
     line-height: 30px;
     font-size: 20px;
     text-decoration: none;
-}*
+}
+.active {
+    opacity: 80%;
+}
 button {
     width: 130px;
     border: 1px solid #18A0FB;
@@ -38,7 +43,14 @@ button {
     margin: 5px;
     height: 40px;
     background: #FFFF;
+    font-size: 15px;
 }
-button [name="inscription"]{
+.button #but2{
+    background: #18A0FB;
+    color: #FFFF;
 }
+.but1{
+    color: #18A0FB;
+}
+.button {}
 
