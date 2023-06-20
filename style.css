@@ -3,6 +3,8 @@ body{
 }
 nav {
     display: flex;
+    margin: 0px;
+    padding: 2px;
 }
 nav ul {
     padding: 5px;
@@ -10,6 +12,10 @@ nav ul {
     list-style: none;
     position: relative;
     float: center;
+    color: #000000;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 nav ul li {
     display: inline-block;
@@ -24,8 +30,10 @@ nav a {
 }*
 button {
     width: 130px;
-    border: 1px solid;
+    border: 1px solid #18A0FB;
     border-radius: 10px;
     margin: 5px;
     height: 40px;
+    background: #FFFF;
 }
+
