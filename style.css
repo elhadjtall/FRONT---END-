@@ -103,7 +103,6 @@ section .classimage{
     flex-wrap: wrap;
     
 }
-
 section .classimage img {
    width: 190px;
    height: 100px;
@@ -112,11 +111,32 @@ section .classimage img {
 
 section .types2{
     width: 50%;
+   
 }
 .type2Content {
+    width: 90%;
+    margin: auto;
+    flex-direction: row;
+}
+section .types2 .type2Content img
+{
+    width: 100%;
+}
+section .types2 .texte {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
     width: 80%;
     margin: auto;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
+
+section .types2 .texte h2{
+    margin-bottom: 20px;
+}
+
 .contenu{
     display: flex;
     align-items: center;
