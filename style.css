@@ -1,7 +1,6 @@
 *{
-    padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 nav {
@@ -11,10 +10,9 @@ nav {
     align-items: center;
     justify-content: space-between;
     height: 60px;
-
 }
 nav ul {
-    padding: 5px;
+    padding: 0px;
     margin: 0;
     list-style: none;
     position: relative;
@@ -25,62 +23,70 @@ nav ul li {
     display: inline-block;
 }
 nav a {
+    text-decoration: none;
+    padding: 2px;
+    margin: 2px;
     display: block;
-    padding: 5px;
     color: #000000;
     opacity: 50%;
-    line-height: 30px;
     font-size: 20px;
-    text-decoration: none;
 }
 .active {
     opacity: 80%;
 }
-button {
+button{
     width: 130px;
-    border: 1px solid #18A0FB;
-    border-radius: 10px;
-    margin: 5px;
     height: 40px;
-    background: #FFFF;
+    border-radius: 8px;
+    border: 1px solid #18A0FB;
+    margin: 2px;
+    background-color: #ffff;
     font-size: 15px;
 }
-button:hover{
-    cursor: pointer;
-}
-.button #but2{
+.but2{
     background: #18A0FB;
-    color: #FFFF;
+    color: #ffff;
 }
 .but1{
     color: #18A0FB;
 }
 header{
     background-image: url(./images/header.png);
-    height: 960px;
+    height: 1022px;
     width: 100%;
 }
 .thebio{
+    font-size: 15px;
+    width: 100%;
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin: 10px;
-    padding: 300px;
-    width: 1392px;
-    height: 80px;
-    color: #F5F5F5;
-    opacity: 100%;
-    font-size: 25px;
+    color: #ffff;
 }
-.but3{
-    border-radius: 5px;
-    width: 192px;
-    height: 52px;
-    background-color: #18A0FB;
-    color: #FFFF;
-    opacity: 100%;
-    padding: 10px;
-    margin: 50px;
+.para{
+    padding: 400px;
 }
-
-
+.types1{
+    width: 600px;
+    height: 700px;
+    border: 1px solid #000000;
+    margin: 6px;
+}
+.types2 {
+    width: 600px;
+    height: 700px;
+    border: 1px solid #000000;
+    margin: 6px;
+}
+section {
+    display: flex;
+    width: 100%;
+}
+.types2 img {
+    width: 600px;
+}
+.types1 h1{
+    font-size: 48px;
+    margin: 1px;
+    padding: 2px;
+}
