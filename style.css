@@ -210,14 +210,30 @@ section .types2 .texte h2{
 .bienfait{
     display: flex;
     width: 100%;
-    height: 200px;
+    height: 500px;
+    margin-top: 10px;
+    border: 1px solid #000000;
 }
 .imagbien{
     width: 50%;
+    height: 300px;
 }
 .imagbien img{
     width: 500px;
 }
 .bienfait .textbien{
     width: 50%;
+    height: 200px;
+    padding: 20px;
+    border: 1px solid #000000;
+    justify-content: center;
+    align-items: center;
 }
+.bienfait .biens {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    border: 1px solid #000000;
+    margin-top: 10px;
+}
+
