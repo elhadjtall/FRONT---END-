@@ -159,3 +159,26 @@ section .types2 .texte h2{
     height: 100%;
     width: 100%;
 }
+.contenu2{
+    display: flex;
+    align-items: center;
+    background-color: #ffff;
+    width: 100%;
+}
+.imgcontenu1 img{
+    width: 100%;
+    height: 100%;
+}
+.textcontenu1 {
+    width: 50%;
+    height: 200px;
+    padding: 20px;
+}
+.imgcontenu1{
+    height: 400px;
+    width: 50%;
+    padding: 40px;
+}
+.textcontenu1 p{
+    margin-top: 30px;
+}
