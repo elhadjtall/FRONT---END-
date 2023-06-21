@@ -43,6 +43,9 @@ button{
     background-color: #ffff;
     font-size: 15px;
 }
+button:hover{
+    cursor: pointer;
+}
 .but2{
     background: #18A0FB;
     color: #ffff;
@@ -52,7 +55,7 @@ button{
 }
 header{
     background-image: url(./images/header.png);
-    height: 1022px;
+    height: 900px;
     width: 100%;
 }
 .thebio{
@@ -67,20 +70,20 @@ header{
     padding: 400px;
 }
 .types1{
-    width: 600px;
-    height: 700px;
-    border: 1px solid #000000;
+    width: 640px;
+    height: 800px;
     margin: 6px;
 }
 .types2 {
-    width: 600px;
-    height: 700px;
+    width: 800px;
+    height: 600px;
     border: 1px solid #000000;
     margin: 6px;
 }
 section {
     display: flex;
     width: 100%;
+    height: 962px;
 }
 .types2 img {
     width: 600px;
@@ -89,4 +92,71 @@ section {
     font-size: 48px;
     margin: 1px;
     padding: 2px;
+    width: 750px;
+    height: 72px;
+}
+.types1 p {
+    font-size: 36px;
+    color: #000000;
+    opacity: 80%;
+    width: 750px;
+    height: 150px;
+}
+.classimage{
+    width: 687px;
+    height: 212px;
+}
+.img1{
+    margin: 15px;
+}
+.img2{
+    margin: 15px;
+}
+.img3{
+    margin: 15px;
+}
+.img4{
+    margin: 15px;
+}
+.img5{
+    margin: 15px;
+}
+.img6{
+    margin: 15px;
+}
+.types2 h2{
+    font-size: 24px bold;
+    width: 558px;
+    height: 36px;
+    padding: 10px;
+    margin: 15px;
+    color: #000000;
+    opacity: 100%;
+}
+.types2 p{
+    width: 558px;
+    height: 120px;
+    margin: 15px;
+    padding: 10px;
+    font-size: 18px;
+    color: #000000;
+    opacity: 100%;
+}
+.container{
+    border: 1px solid #000000;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    background-color: #D4D4D4;
+}
+.container1{
+    width: 686px;
+    height: 80px;
+    border: 1px solid #000000;
+}
+.container2{
+    width: 750px;
+    height: 440px;
+    border: 1px solid #000000;
+    padding: 10px;
 }
