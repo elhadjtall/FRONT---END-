@@ -55,7 +55,17 @@ button:hover{
 .but1{
     color: #18A0FB;
 }
-header img{
+header{
+    background-image: url(./images/header.png);
+    height: 680px;
+}
+.thebio{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 200px;
     width: 100%;
 }
+
 
