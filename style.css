@@ -122,6 +122,8 @@ section .types2{
 section .types2 .type2Content img
 {
     width: 100%;
+    height: 100px
+    box-shadow: ;
 }
 section .types2 .texte {
     display: flex;
@@ -233,7 +235,6 @@ section .types2 .texte h2{
     margin-bottom: 20px;
 }
 .bien1{
-    border: 1px solid red;
     display: inline-block;
     flex-direction: row;
 }
