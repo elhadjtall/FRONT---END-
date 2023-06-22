@@ -59,7 +59,7 @@ button:hover{
 }
 header{
     background-image: url(./images/header.png);
-    height: 700px;
+    height: 800px;
 }
 header .thebio{
     font-size: 20px;
@@ -67,12 +67,12 @@ header .thebio{
     text-align: center;
     justify-content: center;
     align-items: center;
+    padding-top: 600px;
     color: #ffff;
-    border: 1px solid red;
 }
 header button{
     background-color: #18A0FB;
-    width: 140px;
+    width: 150px;
     color: #ffff;
 }
 
