@@ -119,6 +119,17 @@ section .types2{
     margin: auto;
     flex-direction: row;
 }
+.boxinfo{
+    width: 200px;
+    height: 180px;
+    background-color: #ffff;
+    border-radius: 8px;
+    border: 1px solid #000000;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+}
 section .types2 .type2Content img
 {
     width: 100%;
