@@ -60,19 +60,15 @@ button:hover{
 header{
     background-image: url(./images/header.png);
     height: 700px;
-    width: 100%;
 }
 header .thebio{
-    font-size: 15px;
+    font-size: 20px;
     width: 100%;
     text-align: center;
     justify-content: center;
     align-items: center;
     color: #ffff;
-    padding-top: 50px;
-}
-header .para{
-    padding: 400px;
+    border: 1px solid red;
 }
 header button{
     background-color: #18A0FB;
@@ -225,18 +221,30 @@ section .types2 .texte h2{
 .imagbien img{
     width: 500px;
 }
-.bienfait .textbien{
+.textbien{
     width: 50%;
-    height: 200px;
-    padding: 80px;
+    height: 400px;
     justify-content: center;
     align-items: center;
+    padding: 60px;
+    border: 1px solid #000000;
 }
-.bienfait .biens {
+.textbiens p {
+    border: 1px solid #18A0FB;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+.bien1{
+    border: 1px solid red;
+    display: inline-block;
+    flex-direction: row;
+}
+.biens {
     display: flex;
     width: 100%;
     flex-direction: column;
-    margin-top: 10px;
+    margin-top: 20px;
+    border: 1px solid #18A0FB;
 }
 .informations{
     display: flex;
@@ -264,6 +272,7 @@ footer .icone{
     align-items: center;
     text-align: center;
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 footer .fa-facebook{
     color: #18A0FB;
@@ -279,4 +288,5 @@ footer .fa-instagram{
     justify-content: center;
     align-items: center;
     font-size: 20px;
+    padding-top: 20px;
 }
