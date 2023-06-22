@@ -223,14 +223,12 @@ section .types2 .texte h2{
 }
 .textbien{
     width: 50%;
-    height: 400px;
+    height: 300px;
     justify-content: center;
     align-items: center;
     padding: 60px;
-    border: 1px solid #000000;
 }
 .textbiens p {
-    border: 1px solid #18A0FB;
     padding-top: 20px;
     margin-bottom: 20px;
 }
@@ -244,7 +242,9 @@ section .types2 .texte h2{
     width: 100%;
     flex-direction: column;
     margin-top: 20px;
-    border: 1px solid #18A0FB;
+}
+.biens p{
+    margin-left: 50px;
 }
 .informations{
     display: flex;
@@ -282,6 +282,9 @@ footer .fa-snapchat{
 }
 footer .fa-instagram{
     color: red;
+}
+.fa-whatsapp{
+    color: green;
 }
 .icones {
     text-align: center;
