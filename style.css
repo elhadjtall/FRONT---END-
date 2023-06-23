@@ -58,7 +58,7 @@ button:hover{
     color: #18A0FB;
 }
 header{
-    background-image: url(./images/header.png);
+    background-image: url(header.png);
     height: 800px;
 }
 header .thebio{
@@ -118,6 +118,7 @@ section .types2{
     width: 90%;
     margin: auto;
     flex-direction: row;
+    border: 1px solid #000000;
 }
 .boxinfo{
     width: 200px;
@@ -128,7 +129,9 @@ section .types2{
     align-items: center;
     text-align: center;
     justify-content: center;
-    
+    top: 0;
+    left: 10px;
+
 }
 section .types2 .type2Content img
 {
