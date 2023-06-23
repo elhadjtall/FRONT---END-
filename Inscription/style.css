@@ -10,10 +10,6 @@ body {
 	height: 100vh;
 	flex-direction: column;
 }
-.container1{
-    width: 100%;
-    border: 1px solid red;
-}
 .container1 h1{
     font-size: 40px;
     text-align: center;
@@ -27,16 +23,18 @@ body {
 }
 form{
     border: 1px solid black;
-    height: 400px;
-    width: 700px;
+    height: 500px;
+    width: 800px;
+    margin-left: 23%;
     padding-top: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 form input{
     width: 300px;
-    padding: 10px;
-    margin: 10px;
-    align-items: center;
-    justify-content: center;
+    padding: 15px;
+    margin: 10px; 
 }
 form input[type="email"]{
     width: 650px;
@@ -45,10 +43,20 @@ form input[type="password"]{
     width: 650px;
 }
 form input[type="submit"]{
-    width: 130px;
+    width: 150px;
     border-radius: 8px;
     background-color: #18A0FB;
     color: #ffff;
     border: 1px solid #18A0FB;
     float: left;
+    margin: 55px;
+    margin-top: 10px;
+}
+form input[type="submit"]:hover{
+    cursor: pointer;
+}
+form h2{
+    font-size: 30px;
+    padding-bottom: 30px;
+    margin-left: -440px;
 }
