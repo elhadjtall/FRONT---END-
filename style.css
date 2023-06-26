@@ -344,10 +344,10 @@ label{
     color: #000000;
     transition: 0.2s;
 }
-form h1{
+.hero h1{
     text-align: center;
     padding-bottom: 30px;
-    font-size: 40px;
+    font-size: 50px;
 }
 form p{
     text-align: center;
