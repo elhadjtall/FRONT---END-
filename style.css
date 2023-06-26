@@ -55,7 +55,15 @@ button:hover{
     background: #18A0FB;
     color: #ffff;
 }
+.but2 a{
+    text-decoration: none;
+    color: #ffff;
+}
 .but1{
+    color: #18A0FB;
+}
+.but1 a{
+    text-decoration: none;
     color: #18A0FB;
 }
 header{
@@ -223,6 +231,10 @@ section .types2 .texte h2{
 .applijeu .contact{
     color: #18A0FB;
 }
+.applijeu .contact a{
+    text-decoration: none;
+    color: #18A0FB;
+}
 .bienfait{
     display: flex;
     width: 100%;
@@ -317,7 +329,6 @@ footer .fa-instagram{
 }
 form{
     width: 90%;
-    max-width: 600px;
     border: 1px solid #000000;
     margin: 10px;
     padding: 20px;
@@ -334,20 +345,10 @@ input, textarea{
     border: 1px solid #000000;
     font-size: 15px;
 }
-label{
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding: 10px;
-    cursor: text;
-    color: #000000;
-    transition: 0.2s;
-}
 .hero h1{
     text-align: center;
     padding-bottom: 30px;
-    font-size: 50px;
+    font-size: 40px;
 }
 form p{
     text-align: center;
@@ -356,10 +357,6 @@ form p{
 }
 form .prive p{
     text-align: justify;
-}
-input:focus~label{
-    top: -35px;
-    font-size: 14px;
 }
 .row {
     display: flex;
