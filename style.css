@@ -369,3 +369,6 @@ input:focus~label{
 .row .inputgroup{
     flex-basis: 48%;
 }
+.connexions{
+    padding-top: 10px;
+}
