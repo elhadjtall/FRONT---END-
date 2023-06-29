@@ -328,10 +328,10 @@ footer .fa-instagram{
     flex-direction: column;
 }
 form{
-    width: 90%;
-    border: 1px solid #000000;
-    margin: 10px;
-    padding: 20px;
+    width: 900px;
+    border: 1px solid #2f2f3b;
+    margin: 30px;
+    padding: 50px;
 
 }
 .inputgroup{
@@ -340,7 +340,7 @@ form{
 }
 input, textarea{
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     outline: 0;
     border: 1px solid #000000;
     font-size: 15px;
@@ -348,7 +348,10 @@ input, textarea{
 .hero h1{
     text-align: center;
     padding-bottom: 30px;
-    font-size: 40px;
+    font-size: 50px;
+}
+.hero p{
+    font-size: 20px;
 }
 form p{
     text-align: center;

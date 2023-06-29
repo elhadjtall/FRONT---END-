@@ -10,7 +10,7 @@
     <div class="hero">
         <h1>Prêt à nous rejoindre?</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-        <form action="">
+        <form action="traitement.php" method="post">
         <h2>inscription gratuite</h2>
         <div class="row">
         <div class="inputgroup">

@@ -1,3 +1,5 @@
+<?php
+include("bdd.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,12 +21,12 @@
                 <li><a href="#">Aide?</a></li>
             </ul>
         <div class="button">
-            <button type="submit" name="connexion" class="but1">connexion</button>
-            <button type="submit" name="inscription" class="but2">inscription</button>
+            <button type="submit" name="connexion" class="but1"><a href="connexion.html">connexion</a></button>
+            <button type="submit" name="inscription" class="but2"><a href="inscription.html">inscription</a></button>
         </div>
         </nav>
      </div>
-    </div>
+    </div> <br><br><br><br>
     <div class="hero">
         <form action="">
         <h1>Contactez-nous</h1>
@@ -51,7 +53,7 @@
         </div>
         <button class="but2" type="submit" name="submit">Soumettre</button>
         </form>
-    </div>
+    </div><br><br><br><br><br>
     <div class="informations">
         <h3><a href="#">Mobile app</a></h3>
         <h3><a href="#">Community</a></h3>
