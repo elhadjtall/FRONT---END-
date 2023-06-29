@@ -33,7 +33,7 @@ $stmt->bind_param("ssss",
                    $_POST["nom"],
                    $_POST["prenom"],
                    $_POST["email"],
-                   $password);
+                   $password_hash);
 if ($stmt->execute()) {
     header("Location: inscription-success.html");
 }else {
