@@ -19,3 +19,27 @@ if (! preg_match("/[1-9]/i", $_POST["password"])){
 if($_POST['password'] !== $_POST["confirm_password"]){
     die('Le mot de passe doit correspondre');
 }
+// Hachage du mot de passe
+$password_hash = password_hash($_POST['password'], PASSWORD_DEFAULT);
+
+$mysqli = require __DIR__ . "/bdd.php";
+//Insertion des donnée dans la base de données
+$sql = "INSERT INTO user (nom, prenom, email, password) VALUES (?, ?, ?, ?)";
+$stmt = $mysqli->stmt_init();
+if( ! $stmt->prepare($sql)){
+    die("SQL error: " . $mysqli->error);
+}
+$stmt->bind_param("ssss", 
+                   $_POST["nom"],
+                   $_POST["prenom"],
+                   $_POST["email"],
+                   $password);
+if ($stmt->execute()) {
+    header("Location: inscription-success.html");
+}else {
+    if ($mysqli->errno === 1062) {
+        die ("couriel déjà reçu");
+    }else {
+        die($mysqli->error ." " .$mysqli->errno);
+    }
+}

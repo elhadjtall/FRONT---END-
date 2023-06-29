@@ -1,3 +1,20 @@
+<?php
+$is_invalid = false;
+
+// La requette pour la base de donnée 
+if ($_SERVER["REQUEST_METHOD"] === "POST"){
+    // Inclure la base de donnée bdd dans le formulaire
+}
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

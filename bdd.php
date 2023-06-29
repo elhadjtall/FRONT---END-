@@ -1,15 +1,12 @@
 <?php
 $host = "localhost";
 $username = "root";
-$bdname = "projet3";
+$dbname = "projetissa";
 $password = "";
 
-$mysqli = new mysqli(hostname: $host, 
-                    username: $username, 
-                    password: $password,
-                    database: $bdname);
+$mysqli = new mysqli($host, $username, $password, $dbname);
 if ($mysqli->connect_errno){
-    die("Erreur de connection: " . $mysqli->connect_error);
+    die("Erreur de connexion : " . $mysqli->connect_error);
 }
 return $mysqli;
-
+?>
