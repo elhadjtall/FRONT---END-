@@ -1,3 +1,36 @@
+<?php
+if(isset($_POST["submit"])){
+    if(empty($_POST["nom"]) || empty($_POST["numero"]) || empty($_POST["email"]) || empty($_POST["objet"]) || empty($_POST["message"])){
+        echo "Les champs sont vides";
+    } else {
+        $nom = $_POST["nom"];
+        $numero = $_POST["numero"];
+        $email = $_POST["email"];
+        $message = $_POST["message"];
+
+        $to = "elhadjoumartall10@gmail.com";
+        $subject = $_POST["objet"]; // Utiliser l'objet du formulaire pour le sujet de l'e-mail
+
+        $message = "Email: {$email}\nNumero: {$numero}\n" . $message; // Ajouter une nouvelle ligne après l'e-mail et le numéro
+
+        // Toujours définir le type de contenu lors de l'envoi d'un e-mail HTML
+        $headers = "MIME-Version: 1.0" . "\r\n";
+        $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+        // Ajouter l'adresse e-mail de l'expéditeur dans les en-têtes
+        $headers .= "From: $email" . "\r\n";
+
+        $emailSent = mail($to, $subject, $message, $headers);
+
+        if ($emailSent) {
+            echo "<script>alert('Message envoyé');</script>";
+        } else {
+            echo "<script>alert('Message non envoyé');</script>";
+        }
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,7 +59,7 @@
      </div>
     </div> <br><br><br><br>
     <div class="hero">
-        <form action="">
+        <form action="" method="POST">
         <h1>Contactez-nous</h1>
         <p>Chattez avec nous via Whatsapp ou complétez ce formulaire pour recevoir des informations sur les apps Odoo, sur nos services et sur notre entreprise.</p> 
         <div class="row">
@@ -44,7 +77,7 @@
             <input type="text" name="objet" id="" placeholder="Objet">
         </div>
         <div class="inputgroup">
-            <textarea id="message" rows="8" placeholder="Your message"></textarea>
+            <textarea id="message" rows="8" name="message" placeholder="Your message"></textarea>
         </div>
         <div class="prive">
         <p>Nous traiterons vos données à caractère personnel de la manière décrite dans notre Politique vie privée, pour répondre à vos questions et vous fournir plus d'informations sur nos produits et nos services.</p>
@@ -72,5 +105,6 @@
     <div class="icones">
         <p>© Thé Tip Top,  2023.</p>
     </div>
+    <script></script>
 </body>
 </html>
