@@ -1,35 +1,33 @@
 <?php
+
 $is_invalid = false;
 
 // La requette pour la base de donnée 
-if ($_SERVER["REQUEST_METHOD"] === "POST"){
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // Inclure la base de donnée bdd dans le formulaire
     $mysqli = require __DIR__ . "/bdd.php";
 
     //selections toutes les colonnes de la table de user
-    $sql = sprintf("SELECT * FROM user
+    $sql = sprintf("SELECT * FROM user1
                     WHERE email = '%s'",
-                    $mysqli->real_escape_string($_POST['email']));
+                    $mysqli->real_escape_string($_POST["email"]));
     
     $resultat = $mysqli->query($sql);
     $user = $resultat->fetch_assoc();
 
-    //Vérification du mot de pass dans la base de donnée
     if($user){
-        if (password_verify($_POST["password"], $user["password"])){
-            session_start();
-
-        // Regenere l'identifiant de session en appelant la fonction
-
+       if (password_verify($_POST["password"], $user["password_hash"])){
+        session_start();
         session_regenerate_id();
+
         $_SESSION["user_id"] = $user["id"];
         header("Location: affichage.php");
         exit();
-        }
-    }
-    $is_invalid = true;
-}
 
+    }
+}
+$is_invalid = true;
+}
 ?>
 
 <!DOCTYPE html>
@@ -43,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
 <body>
     <div class="hero">
         <h1>Connexion securisé !</h1>
-        <?php if($is_invalid) : ?>
+        <?php if ($is_invalid) : ?>
             <em>Connexion invalide</em>
         <?php endif; ?>
 
@@ -56,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
 
         </div>
         <div class="inputgroup">
-            <input type="password" name="password" id="" placeholder="Password">
+            <input type="password" name="password" id="password" placeholder="Password">
         </div>
         <button class="but2" type="submit" name="submit">Soumettre</button>
         </div>

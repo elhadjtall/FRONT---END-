@@ -17,14 +17,15 @@ if (! preg_match("/[1-9]/i", $_POST["password"])){
 }
 //Les mot de passes doit être correspondre
 if($_POST['password'] !== $_POST["confirm_password"]){
-    die('Le mot de passe doit correspondre');
+    die("Le mot de passe doit correspondre");
 }
 // Hachage du mot de passe
-$password_hash = password_hash($_POST['password'], PASSWORD_DEFAULT);
+$password_hash = password_hash($_POST["password"], PASSWORD_DEFAULT);
 
 $mysqli = require __DIR__ . "/bdd.php";
 //Insertion des donnée dans la base de données
-$sql = "INSERT INTO user (nom, prenom, email, password) VALUES (?, ?, ?, ?)";
+$sql = "INSERT INTO user1 (nom, prenom, email, password_hash) VALUES (?, ?, ?, ?)";
+
 $stmt = $mysqli->stmt_init();
 if( ! $stmt->prepare($sql)){
     die("SQL error: " . $mysqli->error);

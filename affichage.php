@@ -12,11 +12,6 @@ if(isset($_POST["user_id"])){
 
     $user = $resultat->fetch_assoc();
 }
-
-$_SESSION()
-
-
-
 ?>
 
 <!DOCTYPE html>
@@ -24,9 +19,12 @@ $_SESSION()
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Afichage</title>
 </head>
 <body>
+    
     <h1>BIENVENU SUR LA PAGE</h1>
+    
 </body>
 </html>
