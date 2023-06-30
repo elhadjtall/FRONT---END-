@@ -11,7 +11,7 @@
 nav {
     display: flex;
     margin: 0px;
-    padding: 2px;
+    padding: 5px;
     align-items: center;
     justify-content: space-between;
     height: 60px;
@@ -71,7 +71,7 @@ header{
     height: 800px;
 }
 header .thebio{
-    font-size: 20px;
+    font-size: 30px;
     width: 100%;
     text-align: center;
     justify-content: center;
